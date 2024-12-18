@@ -17,6 +17,7 @@
     "vue": "latest"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "highlight.js": "^11.11.0"
   }
 }
