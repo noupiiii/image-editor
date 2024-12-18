@@ -5,7 +5,7 @@ services:
     image: image-editor-back
     container_name: fastapi-container
     build:
-      context: ./image-editor-back
+      context: ./API
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
@@ -16,7 +16,7 @@ services:
     image: image-editor-front
     container_name: irex-portal
     build: 
-      context: ./image-editor-front
+      context: ./front
       dockerfile: Dockerfile
     restart: on-failure
     ports:
