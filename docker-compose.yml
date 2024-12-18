@@ -24,7 +24,7 @@ services:
     networks:
       - app-network
     depends_on:
-      - image-editor-back
+      - api
 
 networks:
   app-network:
