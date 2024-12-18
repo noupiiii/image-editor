@@ -10,6 +10,6 @@ setup_cors(app)
 # Include API routes
 app.include_router(api_router)
 
-@app.get("/api")
+@app.get("/api/")
 def root():
     return {"message": "Welcome to the Color Palette API!"}
