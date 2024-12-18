@@ -85,7 +85,7 @@ const fetchApiData = async () => {
     formData.append('file', fileInfo.value.file);
     formData.append('n_colors', numColors.value);
 
-    const data = await $fetch('/api/extract-colors', {
+    const data = await $fetch('/extract-colors', {
       baseURL: config.public.API_URL,
       method: 'POST',
       body: formData,

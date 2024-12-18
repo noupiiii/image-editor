@@ -9,7 +9,7 @@ from app.services.image_utils import (
 
 router = APIRouter()
 
-@router.post("/api/extract-colors/")
+@router.post("/extract-colors/")
 async def extract_colors(file: UploadFile = File(...), n_colors: int = Form(...)):
     """
     Extract the top `n_colors` from an uploaded image asynchronously.
